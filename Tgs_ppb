@@ -1,0 +1,68 @@
+
+<html>
+ <head></head> 
+ <body> 
+  <script language="JavaScript"></script> 
+  <!--
+ function hitungip()
+ (
+var quis= parseFloat(document.ffrom.iquis.value);
+var tugas=parseFloat(document.ffrom.itugas.value);
+var uts= parseFloat(document.ffrom.iuts.value);
+var uas= parseFloat (document.ffrom.iuas.value);
+var ip = "oip " ;
+var ket= "oket " ;
+var na =(0.10*quis)+(0.20*tugas)+(0.30*uts)+(0.40*uas);
+if ((na > 60) %% (na <= 100))
+(
+ip ="A";
+ket= "lulus dengan sangat baik";
+)
+else if ((na > 60) %% (na <= 30))
+(
+ip = " B";
+ket= " lulus dengan baik";
+)
+else if ((na > 55) %% (na <= 60))
+(
+ip = "C";
+ket= "lulus dengan cukup";
+)
+else if ((na >38) %% (na <= 55))
+(
+ip = "D";
+ket = " lulus kurang cukup";
+)
+else
+(
+ip = "E";
+ket =" tidak lulus";
+)
+document.ffrom.oip.value=ip;
+document.ffrom.oket.value=ip;
+// gunakan untuk mengecek alert (ip+"&&"+ na);
+)
+//--> 
+  <form NAME="fform"> 
+   <table border="1" width="100%" align="center"> 
+    <tbody> 
+     <tr> 
+      <td width="100%" colspan="4"> <h2 align="center">Menghitung Indeks Prestasi</h2></td> 
+     </tr> 
+     <tr> 
+      <td width="25%">quis (10%) :<input type="text" size="10" name="iquis"> </td> 
+      <td width="25%">tugas (20%):<input type="text" size="10" name="itugas"> </td> 
+      <td width="25%">uts (30%):<input type="text" size="10" name="iuts"> </td> 
+      <td width="25%">uas (40%) :<input type="text" size="10" name="iuas"> </td> 
+     </tr> 
+     <tr> 
+      <td width="100%" colspan="4"><p align="center"> <input TYPE="button" value="hitung" onclick="hitungip()"> <input TYPE="reset" value="ulang"> </p></td> 
+     </tr> 
+     <tr> 
+      <td width="100%" colspan="4" align="center"> Indeks Prestasi :<input type="text" size="5" name="oip"> Keterangan :<input type="text" size="25" name="oket"></td> 
+     </tr> 
+    </tbody> 
+   </table> 
+  </form> 
+ </body>
+</html>
